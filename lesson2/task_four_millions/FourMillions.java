@@ -20,9 +20,8 @@ public class FourMillions {
 
         /**
          * Считаем +1
-         * Нужно сделать метод синхронизировнным, чтобы только один поток мог изменять значение счетчика
          */
-        public synchronized void increment() {
+        public void increment() {
             count++;
         }
 
