@@ -18,18 +18,18 @@ public class FourMillions {
          */
         private long count = 0;
 
-        /**
+         /**
          * Считаем +1
+         * Нужно сделать метод синхронизировнным, чтобы только один поток мог изменять значение счетчика
          */
-        public void increment() {
+        public synchronized void increment() {
             count++;
         }
 
         /**
          * Получить текущее значение счётчика
-         * Нужно сделать метод синхронизировнным, чтобы при вызове всегда возвращалось фактическое значение
          */
-        public synchronized long getCount() {
+        public long getCount() {
             return count;
         }
     }
