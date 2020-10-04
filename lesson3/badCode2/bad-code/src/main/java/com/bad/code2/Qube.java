@@ -1,7 +1,7 @@
 package com.bad.code2;
 
 /**
- *
+ * Класс, описывающий куб
  */
 public class Qube implements Shape3D {
 
