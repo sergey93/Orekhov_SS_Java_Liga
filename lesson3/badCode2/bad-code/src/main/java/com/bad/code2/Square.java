@@ -1,5 +1,8 @@
 package com.bad.code2;
 
+/**
+ * Класс, описывающий квадрат
+ */
 public class Square {
 
     /**
