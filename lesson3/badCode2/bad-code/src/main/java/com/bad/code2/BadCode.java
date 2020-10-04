@@ -1,6 +1,6 @@
 package com.bad.code2;
 
-public class BadCode2 {
+public class BadCode {
     public static void main(String... args) {
         Qube qube = new Qube(1d, 1d, 1d, 10d);
         System.out.println("Qube volume: " + qube.getVolume());
