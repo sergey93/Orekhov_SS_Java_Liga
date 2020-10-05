@@ -3,26 +3,22 @@ package com.bad.code2;
 /**
  * Класс, описывающий квадрат
  */
-<<<<<<< HEAD
-public class Square {
-=======
 public class Square implements Shape2D {
->>>>>>> cleanCode
 
     /**
      * координата центра фигуры по оси X
      */
-    private Double x;
+    private final Double x;
 
     /**
      * координата центра фигуры по оси Y
      */
-    private Double y;
+    private final Double y;
 
     /**
      * длина ребра квадрата
      */
-    private Double edgeSize;
+    private final Double edgeSize;
 
     /**
      * Коструктор класса
