@@ -1,36 +1,57 @@
 package com.bad.code2;
 
-public class Square implements Shape3D {
-    private Double x;
-    private Double y;
+/**
+ * Класс, описывающий квадрат
+ */
+public class Square {
+
+    /**
+     * координаты центра фигуры
+     */
+    private Double x, y;
+
+    /**
+     * длина ребра квадрата
+     */
     private Double edgeSize;
-    public Square(Double x, Double y, Double edgeSize) {
-        this.x = x;
-        this.y = y;
+
+    /**
+     * Коструктор класса
+     *
+     * @param centerX координатам центра фигуры по оси X
+     * @param centerY координатам центра фигуры по оси Y
+     * @param edgeSize длина стороны квадрата
+     */
+    public Square(Double centerX, Double centerY, Double edgeSize) {
+        this.x = centerX;
+        this.y = centerY;
         this.edgeSize = edgeSize;
     }
 
-    @Override
+    /**
+     * возвращает координату центра фигуры по оси X
+     *
+     * @return
+     */
     public Double getX() {
         return x;
     }
 
-    @Override
+    /**
+     * возвращает координату центра фигуры по оси Y
+     *
+     * @return
+     */
     public Double getY() {
         return y;
     }
 
-    @Override
-    public Double getZ() {
-        return null;
-    }
-
-    @Override
-    public Double getVolume() {
-        return null;
-    }
-
+    /**
+     * возвращает периметр квадрата
+     *
+     * @return
+     */
     public Double getPerimeter() {
-        return edgeSize * edgeSize;
+        return 4 * edgeSize;
     }
 }
