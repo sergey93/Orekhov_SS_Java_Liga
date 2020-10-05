@@ -1,14 +1,24 @@
 package com.bad.code2;
 
 /**
- *
+ * Класс, описывающий куб
  */
 public class Qube implements Shape3D {
 
     /**
-     * координаты центра фигуры
+     * координата центра фигуры по оси X
      */
-    private Double x, y, z;
+    private Double x;
+
+    /**
+     * координата центра фигуры по оси Y
+     */
+    private Double y;
+
+    /**
+     * координата центра фигуры по оси Z
+     */
+    private Double z;
 
     /**
      * длина стороны

@@ -1,11 +1,19 @@
 package com.bad.code2;
 
-public class Square {
+/**
+ * Класс, описывающий квадрат
+ */
+public class Square implements Shape2D {
 
     /**
-     * координаты центра фигуры
+     * координата центра фигуры по оси X
      */
-    private Double x, y;
+    private Double x;
+
+    /**
+     * координата центра фигуры по оси Y
+     */
+    private Double y;
 
     /**
      * длина ребра квадрата
@@ -48,7 +56,7 @@ public class Square {
      *
      * @return
      */
-    public Double getPerimeter() {
-        return 4 * edgeSize;
+    public Double getArea() {
+        return edgeSize * edgeSize;
     }
 }
