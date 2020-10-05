@@ -6,7 +6,7 @@ public class BadCode {
         System.out.println("Qube volume: " + qube.getVolume());
 
         Square square = new Square(1d, 1d, 5d);
-        System.out.println("Square perimeter: " + square.getPerimeter());
+        System.out.println("Square area: " + square.getArea());
     }
 
 }

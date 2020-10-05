@@ -6,14 +6,24 @@ package com.bad.code2;
 public class Qube implements Shape3D {
 
     /**
-     * координаты центра фигуры
+     * координата центра фигуры по оси X
      */
-    private Double x, y, z;
+    private final Double x;
+
+    /**
+     * координата центра фигуры по оси Y
+     */
+    private final Double y;
+
+    /**
+     * координата центра фигуры по оси Z
+     */
+    private final Double z;
 
     /**
      * длина стороны
      */
-    private Double edgeSize;
+    private final Double edgeSize;
 
     /**
      * Конструктор класса
